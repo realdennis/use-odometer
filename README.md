@@ -2,6 +2,10 @@
 [![Build Status](https://travis-ci.org/realdennis/use-odometer.svg?branch=master)](https://travis-ci.org/realdennis/use-odometer)
 [![Coverage Status](https://coveralls.io/repos/github/realdennis/use-odometer/badge.svg?branch=master)](https://coveralls.io/github/realdennis/use-odometer?branch=master)
 
+![Demo](https://media.giphy.com/media/LUeLbnjIam07lJlyU3/giphy.gif)
+
+[Try it](https://codesandbox.io/s/1o768qxl0j)
+
 A React custom hook for an awesome library odometer, you can use it to make your react counting app easily.
 
 ## Installation
@@ -16,21 +20,23 @@ Remember to install **peerDependency** `odometer`.
 
 ```jsx
 const App = () => {
-  const [count, setCount] = React.useState(0);
+  const [count, setCount] = React.useState(5566);
   const targetRef = React.useRef(null);
   // The ref you want to attach
   useOdometer(targetRef, count);
   return (
     <div className="App">
       <p className="target" ref={targetRef} />
-      <button onClick={() => setCount(9999)}>
-        {/* Just change the number state */}
-        Update value
+      <button onClick={() => setCount(count+1234)}>
+        {/* Just change the count state */}
+        +1234
       </button>
     </div>
   );
 };
 ```
+See more [odometer options](https://github.hubspot.com/odometer/#advanced)
+
 
 ## More
 
@@ -51,6 +57,7 @@ const od = useOdometer(targetRef, value, {
 //...
 //.. the same code
 ```
+See more [odometer themes](https://github.hubspot.com/odometer/api/themes/)
 
 ---
 
