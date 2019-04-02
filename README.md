@@ -1,4 +1,6 @@
 # use-odometer
+[![Build Status](https://travis-ci.org/realdennis/use-odometer.svg?branch=master)](https://travis-ci.org/realdennis/use-odometer)
+[![Coverage Status](https://coveralls.io/repos/github/realdennis/use-odometer/badge.svg?branch=master)](https://coveralls.io/github/realdennis/use-odometer?branch=master)
 
 A React custom hook for an awesome library odometer, you can use it to make your react counting app easily.
 
