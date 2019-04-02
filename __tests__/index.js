@@ -5,16 +5,16 @@ afterEach(cleanup);
 const initialValue = 5566;
 const updateValue = 9999;
 const Counter = () => {
+  const [count, setCount] = React.useState(initialValue);
   const targetRef = React.useRef(null);
-  const od = useOdometer(targetRef, {
-    value: initialValue,
+  useOdometer(targetRef, count, {
     format: '(,ddd).dd',
     theme: 'default'
   });
   return (
     <div>
       <p id="target" ref={targetRef} />
-      <button onClick={() => od.update(updateValue)}>Update</button>
+      <button onClick={() => setCount(updateValue)}>Update</button>
     </div>
   );
 };

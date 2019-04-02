@@ -47,5 +47,8 @@
     "moduleNameMapper": {
       "\\.(css|less|scss)$": "<rootDir>/node_modules/jest-css-modules"
     }
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2"
   }
 }

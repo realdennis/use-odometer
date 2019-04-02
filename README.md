@@ -14,17 +14,15 @@ Remember to install **peerDependency** `odometer`.
 
 ```jsx
 const App = () => {
+  const [count, setCount] = React.useState(0);
   const targetRef = React.useRef(null);
   // The ref you want to attach
-  const od = useOdometer(targetRef, {
-    value: 1234
-    //or other config
-  });
+  useOdometer(targetRef, count);
   return (
     <div className="App">
       <p className="target" ref={targetRef} />
-      <button onClick={() => od.update(9999)}>
-        {/* change number by call od.update() */}
+      <button onClick={() => setCount(9999)}>
+        {/* Just change the number state */}
         Update value
       </button>
     </div>
@@ -45,8 +43,7 @@ eg.
 import 'odometer/themes/odometer-theme-car.css';
 //...
 //...
-const od = useOdometer(targetRef, {
-  value: 1234,
+const od = useOdometer(targetRef, value, {
   theme: 'car'
 });
 //...
