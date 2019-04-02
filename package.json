@@ -1,0 +1,51 @@
+{
+  "name": "use-odometer",
+  "version": "0.0.1",
+  "description": "React custom hook for odometer (Smoothly transitions numbers with ease).",
+  "main": "dist/index.js",
+  "author": "@realdennis",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/realdennis/use-odometer.git"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "build": "microbundle build src/index.js --jsx React.createElement"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.0.0",
+    "babel-jest": "^24.5.0",
+    "coveralls": "^3.0.3",
+    "jest": "^24.5.0",
+    "jest-css-modules": "^2.0.0",
+    "microbundle": "^0.11.0",
+    "odometer": "^0.4.8",
+    "parcel-bundler": "^1.12.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-testing-library": "^6.0.4"
+  },
+  "peerDependencies": {
+    "odometer": "^0.4.8",
+    "react": "^16.8.0"
+  },
+  "keywords": [
+    "react",
+    "react-hooks",
+    "odometer",
+    "smoothly-transitioning-numbers",
+    "count-up"
+  ],
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|less|scss)$": "<rootDir>/node_modules/jest-css-modules"
+    }
+  }
+}
