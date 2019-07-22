@@ -1,7 +1,7 @@
 import React from 'react';
 import useOdometer from '../src/index.js';
-import { cleanup, render, fireEvent } from 'react-testing-library';
-afterEach(cleanup);
+import { render, fireEvent } from '@testing-library/react';
+import  '@testing-library/react/cleanup-after-each'
 const initialValue = 5566;
 const updateValue = 9999;
 const Counter = () => {

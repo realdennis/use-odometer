@@ -21,6 +21,7 @@
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.4.2",
     "@babel/preset-react": "^7.0.0",
+    "@testing-library/react": "^8.0.5",
     "babel-jest": "^24.5.0",
     "coveralls": "^3.0.3",
     "jest": "^24.5.0",
@@ -29,8 +30,7 @@
     "odometer": "^0.4.8",
     "parcel-bundler": "^1.12.3",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-testing-library": "^6.0.4"
+    "react-dom": "^16.8.6"
   },
   "peerDependencies": {
     "odometer": "^0.4.8",
